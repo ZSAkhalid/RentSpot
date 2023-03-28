@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">RentSpot</string>
+    <string name="register">Register</string>
+    <string name="f_name">First name</string>
+    <string name="l_name">Last name</string>
+    <string name="email">E-mail</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="agree">Agree on </string>
+    <string name="terms"><u> terms and conditions</u></string>
+    <string name="mail_offers">Please send me e-mails with offers</string>
+    <string name="f_name_hint">e.g. Khaled</string>
+    <string name="l_name_hint">e.g. Al-shehri</string>
+    <string name="email_hint">e.g. name@mail.com</string>
+    <string name="phone_number_hint">54*******</string>
+    <string name="next_button">Next ></string>
+    <string name="button_login">log in</string>
+    <string name="Description">Go back button</string>
+
+    <string-array name="countriesCode">
+        <item> 966 </item>
+        <item> 961 </item>
+        <item> 962 </item>
+        <item> 963 </item>
+        <item> 964 </item>
+        <item> 965 </item>
+        <item> 967 </item>
+        <item> 968 </item>
+        <item> 969 </item>
+        <item> 971 </item>
+        <item> 972 </item>
+        <item> 973 </item>
+        <item> 974 </item>
+        <item> 975 </item>
+        <item> 976 </item>
+        <item> 977 </item>
+        <item> 979 </item>
+        <item> 981 </item>
+        <item> 982 </item>
+        <item> 983 </item>
+        <item> 984 </item>
+        <item> 985 </item>
+        <item> 986 </item>
+        <item> 987 </item>
+        <item> 988 </item>
+        <item> 989 </item>
+        <item> 990 </item>
+        <item> 991 </item>
+        <item> 992 </item>
+        <item> 993 </item>
+        <item> 994 </item>
+        <item> 995 </item>
+        <item> 996 </item>
+        <item> 997 </item>
+        <item> 998 </item>
+        <item> 999 </item>
+        <item> 1 </item>
+        <item> 20 </item>
+        <item> 212 </item>
+        <item> 213 </item>
+        <item> 216 </item>
+        <item> 218 </item>
+        <item> 220 </item>
+        <item> 221 </item>
+        <item> 222 </item>
+        <item> 223 </item>
+        <item> 224 </item>
+        <item> 225 </item>
+        <item> 226 </item>
+        <item> 227 </item>
+        <item> 228 </item>
+        <item> 229 </item>
+        <item> 230 </item>
+        <item> 231 </item>
+        <item> 232 </item>
+        <item> 233 </item>
+        <item> 234 </item>
+        <item> 235 </item>
+        <item> 236 </item>
+        <item> 237 </item>
+        <item> 238 </item>
+        <item> 239 </item>
+        <item> 240 </item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".publishOrDeletePage">
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/back_button"
+        android:contentDescription="@string/Description"
+        android:onClick="goBackButton"
+        android:src="@drawable/left_arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140px"
+        android:text="Select one to manage"
+        android:layout_gravity="center"
+        android:textColor="#70B3A1"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publish a property"
+        android:backgroundTint="#AE70B3"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:onClick="Publish"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete a property"
+        android:backgroundTint="#AE70B3"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:onClick="Delete"
+        />
+
+</LinearLayout>

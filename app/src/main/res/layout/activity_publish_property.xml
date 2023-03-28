@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".publishProperty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="10px"
+                android:layout_marginEnd="10px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/back_button"
+                android:contentDescription="@string/Description"
+                android:onClick="goBackButton"
+                android:src="@drawable/left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Host with us"
+                android:textColor="#70B3A1"
+                android:textSize="40sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Property name"
+                android:textColor="#70B3A1"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/propertyNameID"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:autofillHints="text"
+                android:background="@drawable/edite_text_border"
+                android:hint="e.g. Al-nakhyl"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Property discerption"
+                android:textColor="#70B3A1"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/propertyDiscerptionID"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:autofillHints="text"
+                android:background="@drawable/edite_text_border"
+                android:hint="e.g. 2 rooms"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Property City"
+                android:textColor="#70B3A1"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/cityRadioGroupID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/jeddahID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Jeddah" />
+
+                <RadioButton
+                    android:id="@+id/ryadhID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Ryadh" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Property location"
+                android:textColor="#70B3A1"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/propertyLocationID"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:autofillHints="text"
+                android:background="@drawable/edite_text_border"
+                android:hint="e.g. Abhur"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Price per night"
+                android:textColor="#70B3A1"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/priceID"
+                    android:layout_width="90dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/edite_text_border"
+                    android:hint="e.g 320"
+                    android:inputType="number"
+                    android:paddingStart="4dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/priceID"
+                    android:text="SAR"
+                    android:textColor="#70B3A1"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/getLocationID"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="getLocation"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/get_gps_location" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Property type"
+                android:textColor="#70B3A1"
+                android:textSize="25sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/apartmentID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="APARTMENT" />
+
+                <RadioButton
+                    android:id="@+id/cabanID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="CABANA" />
+
+                <RadioButton
+                    android:id="@+id/campID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="CAMPS" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/agreementID"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="@string/agree"
+                    android:textColor="#70B3A1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:onClick="termsAndConditionsHandler"
+                    android:text="@string/terms"
+                    android:textColor="#4E7FFF" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#1F5D71"
+                    android:onClick="nextHandler"
+                    android:text="@string/next_button" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

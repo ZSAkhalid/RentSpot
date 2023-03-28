@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".selectCity">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="150px"
+        android:layout_marginRight="10px"
+        android:background="@drawable/search_box" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="550px"
+            android:layout_height="350px"
+            android:layout_marginLeft="20px"
+            android:layout_marginEnd="20px"
+            android:background="@drawable/jeddah"
+            android:scaleType="centerCrop"
+            android:onClick="jeddahHandler"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jeddah"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="550px"
+            android:layout_height="350px"
+            android:layout_marginLeft="20px"
+            android:layout_marginEnd="20px"
+            android:background="@drawable/ryadh"
+            android:scaleType="centerCrop"
+            android:onClick="ryadhHandler"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ryadh"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".summrayPublish">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Summary"
+                android:textColor="#70B3A1"
+                android:textSize="40sp" />
+        </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Property Name "
+                android:textColor="#70B3A1"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/propertyNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="......"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Property Discerption "
+                android:textColor="#70B3A1"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/propertyDiscerptionID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="......"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="140px"
+            android:text="city"
+            android:textColor="#70B3A1"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/cityID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="140px"
+            android:text="......"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Property Location "
+                android:textColor="#70B3A1"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/propertyLocationID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="......"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Property type "
+                android:textColor="#70B3A1"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/propertyTypeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="......"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Property Price "
+                android:textColor="#70B3A1"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/propertyPriceID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="......"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="140px"
+                android:text="Property Image "
+                android:textColor="#70B3A1"
+                android:textSize="30sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/propertyImageId"
+                android:layout_width="103dp"
+                android:layout_height="223dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#1F5D71"
+                android:onClick="doneHandler"
+                android:text="Done" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+</ScrollView>

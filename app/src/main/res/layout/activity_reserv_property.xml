@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reservProperty">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/propertyImageID"
+            android:layout_width="match_parent"
+            android:layout_height="1000px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_button"
+            android:contentDescription="@string/Description"
+            android:onClick="goBackButton"
+            android:src="@drawable/left_arrow"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="2000px"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        app:cardCornerRadius="100px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:onClick="moveLine"
+                    android:text="Specification"
+                    android:textColor="#AE70B3"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:onClick="moveLine"
+                    android:text="Location"
+                    android:textColor="#AE70B3"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45px"
+                android:src="@drawable/under_line" />
+
+            <TextView
+                android:id="@+id/descriptionID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40px"
+                android:layout_marginTop="70px"
+                android:text="Apartment with three bedrooms(4244)"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40px"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/locationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/loaction_icon" />
+
+                <TextView
+                    android:id="@+id/locationID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal"
+                android:layout_marginStart="40px"
+                >
+
+                <ImageView
+                    android:id="@+id/priceIcon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/price_icon" />
+
+                <TextView
+                    android:id="@+id/priceID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal"
+                android:layout_marginStart="40px"
+                >
+
+                <ImageView
+                    android:id="@+id/typeIcon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/type" />
+
+                <TextView
+                    android:id="@+id/typeID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!--      Put here the google maps location      -->
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="250px"
+                tools:layout="@layout/activity_reserv_property" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#AE70B3"
+                android:onClick="takeMeToGoogleMaps"
+                android:text="Take me to google map" />
+
+
+            <!--      Put here the google maps location      -->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#D9D9D9"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/startDatePickerButton"
+                    style="?android:spinnerStyle"
+                    android:layout_width="450px"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:onClick="openDatePicker"
+                    android:text="JAN 01 2020"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/endDatePickerButton"
+                    style="?android:spinnerStyle"
+                    android:layout_width="450px"
+                    android:layout_height="wrap_content"
+                    android:onClick="openDatePicker"
+                    android:text="JAN 01 2020"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#AE70B3"
+                android:onClick="reserveNow"
+                android:text="Reserve now" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

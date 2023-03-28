@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "648778428044",
+    "project_id": "rentspotfirebase",
+    "storage_bucket": "rentspotfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648778428044:android:908d33edbc516898ec95a9",
+        "android_client_info": {
+          "package_name": "com.example.rentspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648778428044-7gqoiumnnhcguf2hfg2961fa6s0bgllh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPFU-Db8Qm9SaP6GRZRT6MmuE1aUg0Eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648778428044-7gqoiumnnhcguf2hfg2961fa6s0bgllh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
